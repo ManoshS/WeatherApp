@@ -11,11 +11,11 @@
     
     .card {
         width: 90%;
-        max-width: 470px;
+        max-width: 500px;
         background: linear-gradient(135deg, #00fed8, #282152);
         color: #fff;
         margin: 100px auto 0;
-        border-radius: 20px;
+        border-radius: 15px;
         padding: 40px 35px;
         text-align: center;
     }
@@ -93,4 +93,16 @@
     .wind {
         font-size: 28px;
         margin-top: 58px;
+    }
+    
+    .weather {
+        display: none;
+    }
+    
+    .error {
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+        margin-top: 10px;
+        display: none;
     }
