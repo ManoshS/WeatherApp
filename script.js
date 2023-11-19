@@ -1,4 +1,4 @@
-//https: //api.openweathermap.org/data/2.5/weather?q=Londen&appid=70873155824e4d15a960df64c9710642
+//https://api.openweathermap.org/data/2.5/weather?q=Londen&appid=70873155824e4d15a960df64c9710642
 const apikey = "70873155824e4d15a960df64c9710642"
 const apiurl = "https://api.openweathermap.org/data/2.5/weather?unit=metric&q="
 const searchBox = document.querySelector(".search input");
@@ -15,6 +15,7 @@ async function checkWeather(city) {
     } else {
         var data = await response.json();
         document.querySelector(".city").innerHTML = data.name;
+
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp - 273.15) + "°C";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
